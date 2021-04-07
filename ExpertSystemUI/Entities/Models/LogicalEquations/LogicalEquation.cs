@@ -29,7 +29,7 @@ namespace ExpertSystemUI.Entities.Models.LogicalEquations
             }
         }
 
-        public bool GetResult(List<Instance> parts)
+        public bool GetResult(HashSet<Instance> parts)
         {
             return FirstInstance switch
             {

@@ -92,15 +92,15 @@ namespace ExpertSystemUI.Entities.KnowledgeBases
         public LogicalAxiom FindRule(string ruleName) =>
             Rules.FirstOrDefault(rule => rule.Name == ruleName);
 
-        public List<LogicalAxiom> Conclude()
+        public List<Instance> Conclude()
         {
-            List<Instance> logicalEquationParts = new List<Instance>();
-            List<LogicalAxiom> logicalAxioms = Rules.Where(item => 
-                item.LogicalEquationPart.GetResult(logicalEquationParts)).ToList();
+            HashSet<Instance> logicalEquationParts = new HashSet<Instance>();
+            List<Instance> logicalAxioms = Rules.Where(item => 
+                item.LogicalEquationPart.GetResult(logicalEquationParts))
+                .SelectMany(instance => instance.Result).ToList();
             
             // Simplify logicalAxioms
-            logicalAxioms.RemoveAll(logicalAxiom =>
-                logicalAxiom.Result.All(item => logicalEquationParts.Contains(item)));
+            logicalAxioms.RemoveAll(instance => logicalEquationParts.Contains(instance));
 
             return logicalAxioms;
         }

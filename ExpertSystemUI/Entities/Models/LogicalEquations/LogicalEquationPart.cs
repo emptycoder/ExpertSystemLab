@@ -27,7 +27,7 @@ namespace ExpertSystemUI.Entities.Models.LogicalEquations
             }
         }
 
-        public bool GetResult(List<Instance> parts)
+        public bool GetResult(HashSet<Instance> parts)
         {
             if (!Result) return false;
             
