@@ -1,12 +1,768 @@
 ﻿[
   {
-    "Name": "Дискретна математика",
+    "$id": "1",
+    "Name": "основні функції программи",
     "Attributes": [],
-    "Instances": []
+    "Instances": [
+      {
+        "$id": "2",
+        "Name": "режим планового навчання",
+        "Attributes": [],
+        "Values": [
+          {
+            "$id": "3",
+            "Name": "увімкнено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": true
+          }
+        ]
+      }
+    ]
   },
   {
-    "Name": "Математичний аналіз",
+    "$id": "4",
+    "Name": "machine learning",
     "Attributes": [],
-    "Instances": []
+    "Instances": [
+      {
+        "$id": "5",
+        "Name": "загальні поняття",
+        "Attributes": [
+          {
+            "$id": "6",
+            "Accuracy": 0,
+            "ValueRange": {
+              "$id": "7",
+              "Item1": 0,
+              "Item2": 0
+            },
+            "Name": "матеріали до вивчення",
+            "Type": "System.String[], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": {
+              "$type": "System.String[], System.Private.CoreLib",
+              "$values": [
+                "Англ",
+                "Рус",
+                "Укр"
+              ]
+            }
+          }
+        ],
+        "Values": [
+          {
+            "$id": "8",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://www.machinelearningmastery.ru/basic-concepts-in-machine-learning/"
+          },
+          {
+            "$id": "9",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "10",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "11",
+        "Name": "статистичний висновок",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "12",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "http://www.machinelearning.ru/wiki/images/4/47/Nedelko_machine_learning.pdf"
+          },
+          {
+            "$id": "13",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "14",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "15",
+        "Name": "дерева та boosting",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "16",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://logic.pdmi.ras.ru/~dvk/graphs_dk.pdf"
+          },
+          {
+            "$id": "17",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "18",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "19",
+        "Name": "нейронні мережі",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "20",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://people.orie.cornell.edu/davidr/or474/nn_sas.pdf"
+          },
+          {
+            "$id": "21",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "22",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "23",
+        "Name": "баєсовий висновок",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "24",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://www.amazon.com/dp/3662607913?tag=uuid10-20"
+          },
+          {
+            "$id": "25",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "26",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "27",
+        "Name": "deep learning",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "28",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "http://www.cs.toronto.edu/~fritz/absps/ncfast.pdf"
+          },
+          {
+            "$id": "29",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "30",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$id": "31",
+    "Name": "статистика",
+    "Attributes": [],
+    "Instances": [
+      {
+        "$id": "32",
+        "Name": "математична статистика",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "33",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://shron1.chtyvo.org.ua/Rudenko_Volodymyr/Matematychna_statystyka.pdf"
+          },
+          {
+            "$id": "34",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "35",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "36",
+        "Name": "прикладна статистика",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "37",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "http://www.aup.ru/books/m163/"
+          },
+          {
+            "$id": "38",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "39",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "40",
+        "Name": "регресія",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "41",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "http://www.machinelearning.ru/wiki/index.php?title=%D0%A0%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F"
+          },
+          {
+            "$id": "42",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "43",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$id": "44",
+    "Name": "баєсова вірогідність",
+    "Attributes": [],
+    "Instances": [
+      {
+        "$id": "45",
+        "Name": "баєсова вірогідність",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "46",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://www.taylorfrancis.com/books/bayesian-data-analysis-andrew-gelman-john-carlin-hal-stern-david-dunson-aki-vehtari-donald-rubin/10.1201/b16018"
+          },
+          {
+            "$id": "47",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "48",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "49",
+        "Name": "графічні моделі",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "50",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "http://web.kpi.kharkov.ua/auts/wp-content/uploads/sites/67/2017/02/MOCS_Kachanov_posobie.pdf"
+          },
+          {
+            "$id": "51",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "52",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "53",
+        "Name": "баєсова статистика",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "54",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://www.taylorfrancis.com/books/bayesian-data-analysis-andrew-gelman-john-carlin-hal-stern-david-dunson-aki-vehtari-donald-rubin/10.1201/b16018"
+          },
+          {
+            "$id": "55",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "56",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$id": "57",
+    "Name": "класична вірогідність",
+    "Attributes": [],
+    "Instances": [
+      {
+        "$id": "58",
+        "Name": "дискретна вірогідність",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "59",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://www.uzhnu.edu.ua/uk/infocentre/get/4869"
+          },
+          {
+            "$id": "60",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "61",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "62",
+        "Name": "неперервні одномірні розподіли",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "63",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "http://cyber.uabs.sumdu.edu.ua/images/department/cyber/stories/files/disciplines/theory_of_probab/dfn/material_pract_robot.pdf"
+          },
+          {
+            "$id": "64",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "65",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "66",
+        "Name": "неперервні многомірні розподіли",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "67",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "http://cyber.uabs.sumdu.edu.ua/images/department/cyber/stories/files/disciplines/theory_of_probab/dfn/material_pract_robot.pdf"
+          },
+          {
+            "$id": "68",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "69",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$id": "70",
+    "Name": "лінійна алгебра і додатки",
+    "Attributes": [],
+    "Instances": [
+      {
+        "$id": "71",
+        "Name": "лінійна алгебра",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "72",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://matan.kpi.ua/public/files/PraktykumLAAG.pdf"
+          },
+          {
+            "$id": "73",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "74",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "75",
+        "Name": "чм лін алг",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "76",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://dep_vipm.pnzgu.ru/files/dep_vipm.pnzgu.ru/books/chmla_kudryasheva.pdf"
+          },
+          {
+            "$id": "77",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "78",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$id": "79",
+    "Name": "математичний аналіз",
+    "Attributes": [],
+    "Instances": [
+      {
+        "$id": "80",
+        "Name": "одномірний аналіз",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "81",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://cyberleninka.ru/article/n/odnomernyy-dispersionyy-analiz-povtornyh-nablyudeniy-s-ispolzovaniem-paketa-statisticheskih-programm-stata"
+          },
+          {
+            "$id": "82",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "83",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "84",
+        "Name": "многомірний аналіз",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "85",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "http://www.aup.ru/books/m163/3_2.htm"
+          },
+          {
+            "$id": "86",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "87",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$id": "88",
+    "Name": "дискретна математика",
+    "Attributes": [],
+    "Instances": [
+      {
+        "$id": "89",
+        "Name": "основи теорії графів",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "90",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://ela.kpi.ua/bitstream/123456789/35854/1/Teoriia_hrafiv.pdf"
+          },
+          {
+            "$id": "91",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "92",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      },
+      {
+        "$id": "93",
+        "Name": "комбінаторика",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "94",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "https://edu-lib.com/izbrannoe/vilenkin-n-ya-vilenkin-a-n-vilenkin-p-a-kombinatorika-onlayn"
+          },
+          {
+            "$id": "95",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "96",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$id": "97",
+    "Name": "алгоритми і структури даних",
+    "Attributes": [],
+    "Instances": [
+      {
+        "$id": "98",
+        "Name": "алгоритми і структури даних",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "99",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "http://194.44.152.155:8080/bitstream/123456789/2516/1/Vlasii%20ASD.pdf"
+          },
+          {
+            "$id": "100",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "101",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$id": "102",
+    "Name": "оптимізація",
+    "Attributes": [],
+    "Instances": [
+      {
+        "$id": "103",
+        "Name": "оптимізація",
+        "Attributes": [
+          {
+            "$ref": "6"
+          }
+        ],
+        "Values": [
+          {
+            "$id": "104",
+            "Name": "посилання",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "http://fs.onu.edu.ua/clients/client11/web11/metod/imem/Efimova_Strakhov.pdf"
+          },
+          {
+            "$id": "105",
+            "Name": "мова",
+            "Type": "System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": "Ukr"
+          },
+          {
+            "$id": "106",
+            "Name": "вивчено",
+            "Type": "System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+            "Value": false
+          }
+        ]
+      }
+    ]
   }
 ]

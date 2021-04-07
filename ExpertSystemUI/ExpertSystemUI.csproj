@@ -14,4 +14,11 @@
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Data\concepts.json" />
+      <Resource Include="Data\concepts.json" />
+      <None Remove="Data\rules.dat" />
+      <Resource Include="Data\rules.dat" />
+    </ItemGroup>
+
 </Project>

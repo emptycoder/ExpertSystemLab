@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Windows;
 using ExpertSystemUI.Entities.FileParsers;
 using ExpertSystemUI.Entities.Models;
 using ExpertSystemUI.Utils;
@@ -10,54 +13,8 @@ namespace ExpertSystemUI.Entities.KnowledgeBases
 {
     public class KnowledgeBase
     {
-        private LinkedList<Concept> Concepts { get; } = new();
-        private LinkedList<Constant> Constants { get; } = new();
-
-        public KnowledgeBase()
-        {
-            Attribute attribute = new Attribute
-            {
-                Name = "матеріали до вивчення",
-                Type = typeof(string[]),
-                Value = new[] {"Англ", "Рус", "Укр"}
-            };
-            Concept concept = new Concept {Name = "дискретна математика"};
-            Instance instance = new Instance {Name = "основи теорії графів"};
-            instance.Attributes.Add(attribute);
-            instance.Values.Add(new ItemType
-            {
-                Name = "посилання",
-                Type = typeof(string),
-                Value = "https://ela.kpi.ua/bitstream/123456789/35854/1/Teoriia_hrafiv.pdf"
-            });
-            instance.Values.Add(new ItemType
-            {
-                Name = "мова",
-                Type = typeof(string),
-                Value = "Ukr"
-            });
-            instance.Values.Add(new ItemType
-            {
-                Name = "вивчено",
-                Type = typeof(bool),
-                Value = false
-            });
-            concept.Instances.Add(instance);
-            Concepts.AddFirst(concept);
-
-            Concept mainConcept = new Concept {Name = "основні функції программи"};
-            Instance planingMode = new Instance { Name = "режим планового навчання" };
-            planingMode.Values.Add(new ItemType
-            {
-                Name = "увімкнено",
-                Type = typeof(bool),
-                Value = true
-            });
-            mainConcept.Instances.Add(planingMode);
-            Concepts.AddFirst(mainConcept);
-
-            ObjectParser.SaveObjects("testConcepts.json", Concepts);
-        }
+        public LinkedList<Concept> Concepts { get; } = new();
+        public LinkedList<Constant> Constants { get; } = new();
 
         public LinkedListNode<Concept> MakeNode(Concept concept) =>
             Concepts.AddFirst(concept);

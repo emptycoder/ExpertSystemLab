@@ -7,7 +7,7 @@ namespace ExpertSystemUI.Entities.Readers
 {
     public class CommandReader : IDisposable
     {
-        private static readonly HashSet<char> skipCharacters = new() {'﻿', ' ', '\n', '\r', '\t'};
+        private static readonly HashSet<char> skipCharacters = new() {'﻿', '\n', '\r', '\t'};
         private static readonly Decoder decoder = Encoding.UTF8.GetDecoder();
         private readonly Stream _stream;
         private readonly byte[] _byteBuffer = new byte[1024];
