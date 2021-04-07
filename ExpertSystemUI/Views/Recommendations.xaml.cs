@@ -11,7 +11,7 @@ namespace ExpertSystemUI.Views
 
         public Recommendations(Frame frame, KnowledgeBaseWithRules knowledgeBase)
         {
-            Output = knowledgeBase.Conclude();
+            Output = knowledgeBase.Conclude("вивчено", true);
             InitializeComponent();
         }
     }
