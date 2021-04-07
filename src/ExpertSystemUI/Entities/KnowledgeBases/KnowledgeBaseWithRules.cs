@@ -83,7 +83,7 @@ namespace ExpertSystemUI.Entities.KnowledgeBases
             return new LogicalAxiom
             {
                 Name = str,
-                LogicalEquationPart = equationTree.Last(),
+                LogicalEquationPart = currentEquation,
                 Result = str.Substring(startIndex).Split(" АБО ").Select(item => FindObject(item.ToLower()) ??
                     throw new NullReferenceException(item.ToLower()))
             };
@@ -94,14 +94,14 @@ namespace ExpertSystemUI.Entities.KnowledgeBases
 
         public List<Instance> Conclude<T>(string propertyName, T value)
         {
-            List<Instance> instances = Rules.Where(item => 
+            var instances = Rules.Where(item =>
                 item.LogicalEquationPart.Result)
                 .SelectMany(instance => instance.Result).Distinct().ToList();
             
             // Simplify logicalAxioms
             instances.RemoveAll(instance => 
                 EqualityComparer<T>.Default.Equals((T)instance[propertyName].Value, value));
-
+            
             return instances;
         }
     }

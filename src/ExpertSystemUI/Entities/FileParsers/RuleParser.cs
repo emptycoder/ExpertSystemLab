@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Text;
@@ -26,6 +27,11 @@ namespace ExpertSystemUI.Entities.FileParsers
                     continue;
                 
                 var rule = knowledgeBase.PRead(command);
+                // Unit test
+                // TODO: move this test to project with tests
+                var test = $"якщо {rule.ToString().Replace(")", "").Replace("(", "").ToLower()}";
+                if (test != command.ToLower())
+                    throw new Exception();
                 knowledgeBase.Rules.AddFirst(rule);
             }
         }
