@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpertSystem", "ExpertSystem\ExpertSystem.csproj", "{F556B673-E48F-479E-82D8-ED48BE3B144C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowledgeBaseLib", "KnowledgeBaseLib\KnowledgeBaseLib.csproj", "{98A8A6EF-8709-4956-B0D4-121456C4BC5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F556B673-E48F-479E-82D8-ED48BE3B144C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F556B673-E48F-479E-82D8-ED48BE3B144C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F556B673-E48F-479E-82D8-ED48BE3B144C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F556B673-E48F-479E-82D8-ED48BE3B144C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A8A6EF-8709-4956-B0D4-121456C4BC5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A8A6EF-8709-4956-B0D4-121456C4BC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A8A6EF-8709-4956-B0D4-121456C4BC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A8A6EF-8709-4956-B0D4-121456C4BC5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
