@@ -15,6 +15,7 @@ namespace ExpertSystem.Views
 {
     public class Recommendations : UserControl, INotifyPropertyChanged
     {
+        private static readonly PropertyChangedEventArgs outputPropertyChanged = new(nameof(Output));
         private KnowledgeBaseWithRules? _knowledgeBaseWithRules;
         public KnowledgeBaseWithRules? KnowledgeBaseWithRules
         {
@@ -33,7 +34,7 @@ namespace ExpertSystem.Views
         public void Update()
         {
             Output = _knowledgeBaseWithRules?.Conclude("вивчено", true);
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Output)));
+            PropertyChanged?.Invoke(this, outputPropertyChanged);
         }
 
         private async void InputElement_OnDoubleTapped(object? sender, RoutedEventArgs e)

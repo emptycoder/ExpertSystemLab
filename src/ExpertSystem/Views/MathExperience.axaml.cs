@@ -1,23 +1,28 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using KnowledgeBaseLib.Entities.KnowledgeBases;
 using KnowledgeBaseLib.Entities.Models;
 
 namespace ExpertSystem.Views
 {
-    public class MathExperience : UserControl
+    public class MathExperience : UserControl, INotifyPropertyChanged
     {
-        public LinkedList<Concept> ListOfConcepts { get; }
-        public MathExperience(KnowledgeBase knowledgeBase)
-        {
-            ListOfConcepts = knowledgeBase.Concepts;
-            AvaloniaXamlLoader.Load(this);
-        }
+        private static readonly PropertyChangedEventArgs listOfConceptsPropertyChanged = new(nameof(ListOfConcepts));
 
-        public MathExperience()
+        private LinkedList<Concept>? _listOfConcepts;
+        public LinkedList<Concept>? ListOfConcepts
         {
-            AvaloniaXamlLoader.Load(this);
+            get => _listOfConcepts;
+            set
+            {
+                _listOfConcepts = value;
+                PropertyChanged?.Invoke(this, listOfConceptsPropertyChanged);
+            }
         }
+        public new event PropertyChangedEventHandler? PropertyChanged;
+
+        public MathExperience() =>
+            AvaloniaXamlLoader.Load(this);
     }
 }

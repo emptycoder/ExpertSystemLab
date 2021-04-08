@@ -25,19 +25,18 @@ namespace ExpertSystem.Views
         private readonly KnowledgeBaseWithRules _knowledgeBase = new();
         
         // Pages
-        public Recommendations Recommendations { get; }
-        public MathExperience MathExperience { get; }
+        private readonly Recommendations _recommendations;
 
         public MainWindow()
         {
-            MathExperience = new MathExperience(_knowledgeBase);
             InitializeComponent();
 #if DEBUG
             this.AttachDevTools();
 #endif
             _menuControl = this.FindControl<TabControl>("Menu");
-            Recommendations = this.FindControl<Recommendations>("Recommendations");
-            Recommendations.KnowledgeBaseWithRules = _knowledgeBase;
+            _recommendations = this.FindControl<Recommendations>("Recommendations");
+            _recommendations.KnowledgeBaseWithRules = _knowledgeBase;
+            this.FindControl<MathExperience>("MathExperience").ListOfConcepts = _knowledgeBase.Concepts;
 
             if (!Directory.Exists(DataDirectoryName))
                 Directory.CreateDirectory(DataDirectoryName);
@@ -46,14 +45,14 @@ namespace ExpertSystem.Views
             
             if (!File.Exists(savedConceptsPath)) // Load standard concepts
             {
-                var loadedConcepts = ObjectParser.LoadObjects<Concept>(assetLoader.Open(
+                LinkedList<Concept>? loadedConcepts = ObjectParser.LoadObjects<Concept>(assetLoader.Open(
                     new Uri($"avares://{nameof(ExpertSystem)}/Data/concepts.json")));
                 _knowledgeBase.Concepts.AddRangeFirst(loadedConcepts);
                 _menuControl.SelectedIndex = 1;
             }
             else
             {
-                var loadedConcepts = ObjectParser.LoadObjects<Concept>(savedConceptsPath);
+                LinkedList<Concept>? loadedConcepts = ObjectParser.LoadObjects<Concept>(savedConceptsPath);
                 _knowledgeBase.Concepts.AddRangeFirst(loadedConcepts);
             }
 
@@ -68,7 +67,7 @@ namespace ExpertSystem.Views
             if (_menuControl.SelectedIndex == 1) return;
             
             _menuControl.SelectedIndex = 0;
-            Recommendations.Update();
+            _recommendations.Update();
         }
 
         private void InitializeComponent() =>
@@ -90,6 +89,7 @@ namespace ExpertSystem.Views
             if (result is not null && result.Length == 1)
                 RuleParser.LoadRulesFromFile(_knowledgeBase, result[0]);
             _menuControl.SelectedIndex = 0;
+            _recommendations.Update();
         }
         
         private async void Window_OnClosing(object sender, CancelEventArgs e)
@@ -118,6 +118,6 @@ namespace ExpertSystem.Views
         }
 
         private void UpdateRecommendations_OnTapped(object? sender, RoutedEventArgs e) =>
-            Recommendations.Update();
+            _recommendations.Update();
     }
 }

@@ -29,22 +29,6 @@ namespace KnowledgeBaseLib.Entities.Models.LogicalEquations
             }
         }
 
-        public bool GetResult(HashSet<Instance> parts)
-        {
-            return FirstInstance switch
-            {
-                not null when SecondInstance is null => FirstInstance.GetResult(parts),
-                null when SecondInstance is not null => SecondInstance.GetResult(parts),
-                null when SecondInstance is null => false,
-                _ => LogicalConnection switch
-                {
-                    LogicalConnection.AND => FirstInstance.GetResult(parts) & SecondInstance.GetResult(parts),
-                    LogicalConnection.OR => FirstInstance.GetResult(parts) | SecondInstance.GetResult(parts),
-                    _ => throw new ArgumentOutOfRangeException()
-                }
-            };
-        }
-
         public override string ToString()
         {
             if (FirstInstance is null && SecondInstance is null)

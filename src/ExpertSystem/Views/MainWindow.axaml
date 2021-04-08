@@ -22,7 +22,9 @@
             <TabItem Header="Recommendations" Tapped="UpdateRecommendations_OnTapped">
                 <views:Recommendations x:Name="Recommendations" />
             </TabItem>
-            <TabItem Content="{Binding MathExperience}" Header="My experience" />
+            <TabItem Header="My experience">
+                <views:MathExperience x:Name="MathExperience" />
+            </TabItem>
             <TabItem Header="Load rules from file" Tapped="LoadRules_OnClick" />
         </TabControl>
     </DockPanel>
