@@ -81,7 +81,7 @@ namespace ExpertSystem.Views
                 { 
                     new() {
                     Name = "DAT files",
-                    Extensions = new List<string> { ".dat" }}
+                    Extensions = new List<string> { "dat" }}
                 },
                 AllowMultiple = false
             };
