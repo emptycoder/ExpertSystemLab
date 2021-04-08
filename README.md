@@ -19,4 +19,4 @@ WARNING: Condition only on ukrainian language.
 - [Avalonia UI](https://github.com/AvaloniaUI/Avalonia)
 
 ## About
-Neural network inverted spring pendulum developing under the [MIT license](LICENSE).
+Expert system developing under the [MIT license](LICENSE).
