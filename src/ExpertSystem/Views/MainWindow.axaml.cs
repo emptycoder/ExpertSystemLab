@@ -56,7 +56,7 @@ namespace ExpertSystem.Views
                 _knowledgeBase.Concepts.AddRangeFirst(loadedConcepts);
             }
 
-            string savedRulesPath = Path.Combine(DataDirectoryName, "rules.json");
+            string savedRulesPath = Path.Combine(DataDirectoryName, "rules.dat");
             if (!File.Exists(savedRulesPath)) // Load standard rules
                 RuleParser.LoadRulesFromFile(
                     _knowledgeBase,
